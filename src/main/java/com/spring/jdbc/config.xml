@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ <bean class = "org.springframework.jdbc.datasource.DriverManagerDataSource " name = "ds">
+  <property name = "driverClassName"  value = "com.mysql.cj.jdbc.Driver"/>
+ <property name = "url"  value = "jdbc:mysql://localhost:3306/springjdbc?useSSL = false"/>
+ <property name = "username" value ="root"/> 
+ <property name = "password" value ="7785"/> 
+ </bean> 
+ 
+ <bean class ="org.springframework.jdbc.core.JdbcTemplate"  name = "jdbctemplate">
+ <property name = "dataSource">
+ <ref bean =  "ds"/>
+ </property>
+ </bean>
+ 
+<bean class = "com.jdbc.spring.dao.StudentDaoImpl" name = "studentDao">
+<property name = "jdbcTemplate"  ref = "jdbctemplate"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student1">
+<property name = "sid"  value = "76"/>
+<property name = "name"  value = "radha"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student2">
+<property name = "sid"  value = "78"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student3">
+<property name = "sid"  value = "79"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student4">
+<property name = "sid"  value = "80"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student5">
+<property name = "sid"  value = "81"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student6">
+<property name = "sid"  value = "82"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student7">
+<property name = "sid"  value = "83"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student8">
+<property name = "sid"  value = "84"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student9">
+<property name = "sid"  value = "85"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student10">
+<property name = "sid"  value = "86"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student11">
+<property name = "sid"  value = "87"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student12">
+<property name = "sid"  value = "56"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student13">
+<property name = "sid"  value = "89"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student14">
+<property name = "sid"  value = "90"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student15">
+<property name = "sid"  value = "91"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student16">
+<property name = "sid"  value = "92"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student17">
+<property name = "sid"  value = "93"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+<bean class = "com.spring.jdbc.entity.Student" name = "student18">
+<property name = "sid"  value = "94"/>
+<property name = "name"  value = "krishna"/>
+<property name = "city"  value = "mathura"/>
+</bean>
+ 
+ </beans>
